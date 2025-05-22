@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://c6d1gaf0juf5t"]
+
+[ext_resource type="Script" path="res://Scripts/ball.gd" id="1_ibebe"]
+[ext_resource type="Texture2D" uid="uid://cgxjtlhh25gdj" path="res://Assets package #2/ball.png" id="1_lrwkl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vwyyu"]
+radius = 10.9091
+
+[sub_resource type="Animation" id="Animation_egaep"]
+resource_name = "BounceHit"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.1, 0.1), Vector2(0.125, 0.05), Vector2(0.1, 0.1)]
+}
+
+[sub_resource type="Animation" id="Animation_8ve55"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.1, 0.1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1k2ux"]
+_data = {
+"BounceHit": SubResource("Animation_egaep"),
+"RESET": SubResource("Animation_8ve55")
+}
+
+[node name="Ball" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_ibebe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_lrwkl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.1, 1.1)
+shape = SubResource("CircleShape2D_vwyyu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." groups=["TriggerBallBounceAnim"]]
+libraries = {
+"": SubResource("AnimationLibrary_1k2ux")
+}

@@ -1,17 +1,32 @@
-extends RigidBody2D
+# Player character controls
 
-class_name Paddle
+extends CharacterBody2D
 
-var direction = Vector2.ZERO
+# Player speed base value
+const SPEED = 1000.0
 
-@export var speed = 200
-@export var camera: Camera2D
+# Jump velocity base value (not required in this context)
+# const JUMP_VELOCITY = -400.0
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+# Adds a 'tag'
+func ball_anim_play_BounceHit():
 	pass
+
+func _physics_process(_delta: float) -> void:
+	# Adds the gravity (not required in this context)
+	# if not is_on_floor():
+	#	velocity += get_gravity() * delta
+
+	# Handle jump (not required in this context)
+	# if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	#	velocity.y = JUMP_VELOCITY
+
+	# Gets the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction_Keyboard := Input.get_axis("ui_left", "ui_right")
+	if direction_Keyboard:
+		velocity.x = direction_Keyboard * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		
+	move_and_slide()

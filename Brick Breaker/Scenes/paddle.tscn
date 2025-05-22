@@ -1,19 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://cvuelibl0wgjc"]
+[gd_scene load_steps=4 format=3 uid="uid://b4caxppy2rwfk"]
 
-[ext_resource type="Texture2D" uid="uid://del6bqb0lau70" path="res://Assets/Paddle.png" id="1_bicc6"]
+[ext_resource type="Texture2D" uid="uid://brquuj7cuqewo" path="res://Assets package #2/paddle.png" id="1_q2a24"]
 [ext_resource type="Script" path="res://Scripts/paddle.gd" id="1_q6vr6"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kvcvo"]
-size = Vector2(124, 16)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_evqhs"]
+radius = 45.0451
+height = 612.613
 
-[node name="Paddle" type="RigidBody2D"]
-gravity_scale = 0.0
+[node name="Paddle" type="CharacterBody2D"]
+motion_mode = 1
 script = ExtResource("1_q6vr6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_bicc6")
+scale = Vector2(0.333, 0.333)
+texture = ExtResource("1_q2a24")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_kvcvo")
-debug_color = Color(0.775647, 0.440644, 0, 0.42)
+position = Vector2(0, -2.54059e-06)
+rotation = 1.5708
+scale = Vector2(0.333, 0.333)
+shape = SubResource("CapsuleShape2D_evqhs")
