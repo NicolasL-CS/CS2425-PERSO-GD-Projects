@@ -29,7 +29,8 @@ directories/dtl_directory={}
 
 [display]
 
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 
@@ -58,6 +59,11 @@ dialogic_default_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[orchestrator]
+
+settings/notify_about_pre-releases=false
+settings/action_favorites=PackedStringArray("Types/PackedFloat64Array/set")
 
 [rendering]
 

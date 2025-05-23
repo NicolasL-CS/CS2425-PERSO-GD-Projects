@@ -23,10 +23,15 @@ func _physics_process(_delta: float) -> void:
 
 	# Gets the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction_Keyboard := Input.get_axis("ui_left", "ui_right")
-	if direction_Keyboard:
-		velocity.x = direction_Keyboard * SPEED
+	var direction_keyboard_arrows := Input.get_axis("ui_left", "ui_right")
+	if direction_keyboard_arrows:
+		velocity.x = direction_keyboard_arrows * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 	move_and_slide()
+
+func player_paddle_disable_collisions(disabled_state: bool) -> void:
+	$Paddle_CollisionShape2D.set_disabled(disabled_state)
+	print("Etat de désactivation : ", disabled_state)
+	print("---")

@@ -61,4 +61,13 @@ position = Vector2(576, 632)
 shape = SubResource("RectangleShape2D_k8el2")
 debug_color = Color(0.992383, 0, 0.252791, 0.42)
 
+[node name="Reactivation" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Reactivation"]
+position = Vector2(576, 535)
+shape = SubResource("RectangleShape2D_k8el2")
+debug_color = Color(0.838073, 0.00120442, 0.927695, 0.42)
+
 [connection signal="body_entered" from="Deathzone" to="Ball" method="_on_deathzone_body_entered"]
+[connection signal="body_entered" from="Reactivation" to="Ball" method="_on_reactivation_body_entered"]
+[connection signal="body_entered" from="Reactivation" to="Ball" method="_on_deathzone_body_entered"]

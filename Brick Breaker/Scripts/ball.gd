@@ -26,7 +26,13 @@ func _physics_process(delta: float) -> void:
 		if velocity.x == 0:
 			velocity.x = -200
 
-# Calls the related function on overlap between declared entities
+# Calls the related function on overlap between declared entities (deactivation)
 func _on_deathzone_body_entered(body: Node2D) -> void:
-		print("Ball entered Deathzone...")
-		global_variables.playerLives_decrease()
+	global_variables.playerLives_decrease()
+	var player_paddle = get_parent().get_node("Paddle")
+	player_paddle.player_paddle_disable_collisions(true)
+	
+# Calls the related function on overlap between declared entities (reactivation)		
+func _on_reactivation_body_entered(body: Node2D) -> void:
+	var player_paddle = get_parent().get_node("Paddle")
+	player_paddle.player_paddle_disable_collisions(false)
