@@ -59,3 +59,8 @@ shape = SubResource("CircleShape2D_vwyyu")
 libraries = {
 "": SubResource("AnimationLibrary_1k2ux")
 }
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+amount = 1000
+lifetime = 0.4
+texture = ExtResource("1_lrwkl")

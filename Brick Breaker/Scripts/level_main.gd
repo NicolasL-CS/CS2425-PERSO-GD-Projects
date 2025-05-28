@@ -13,6 +13,11 @@ func _ready() -> void:
 
 # Creates the brick array, adding randomness
 func setupLevel():
+	# Sets the bricks rows increment on each level
+	rows = 2 + GameManager.player_level
+	if rows > 9:
+		rows = 9
+	# Sets bricks colors
 	var colors = getColors()
 	colors.shuffle()
 	# Loops inside each column, then in each row and creates brick instance

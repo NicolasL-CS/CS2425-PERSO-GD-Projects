@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4naya"]
 size = Vector2(32, 32)
 
-[node name="Brick" type="RigidBody2D"]
+[node name="Brick" type="RigidBody2D" groups=["Bricks"]]
 gravity_scale = 0.0
 script = ExtResource("1_qrdbc")
 

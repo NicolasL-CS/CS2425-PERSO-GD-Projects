@@ -7,6 +7,7 @@ var is_active = true
 
 # Sets the velocity of the ball down and left based on the 'speed' value
 func _ready() -> void:
+	speed = speed + (20 * GameManager.player_level)
 	velocity = Vector2(speed * -1, speed)
 
 # Moves the ball
@@ -26,13 +27,10 @@ func _physics_process(delta: float) -> void:
 		if velocity.x == 0:
 			velocity.x = -200
 
-# Calls the related function on overlap between declared entities (deactivation)
 func _on_deathzone_body_entered(body: Node2D) -> void:
-	global_variables.playerLives_decrease()
-	var player_paddle = get_parent().get_node("Paddle")
-	player_paddle.player_paddle_disable_collisions(true)
+	GameManager.playerLives_decrease()
+	# get_parent().get_node("Paddle").player_paddle_disable_collisions(true)
 	
 # Calls the related function on overlap between declared entities (reactivation)		
-func _on_reactivation_body_entered(body: Node2D) -> void:
-	var player_paddle = get_parent().get_node("Paddle")
-	player_paddle.player_paddle_disable_collisions(false)
+# func _on_reactivation_body_entered(body: Node2D) -> void:
+# 	get_parent().get_node("Paddle").player_paddle_disable_collisions(false)

@@ -31,7 +31,8 @@ func _physics_process(_delta: float) -> void:
 		
 	move_and_slide()
 
-func player_paddle_disable_collisions(disabled_state: bool) -> void:
-	$Paddle_CollisionShape2D.set_disabled(disabled_state)
-	print("Etat de désactivation : ", disabled_state)
-	print("---")
+# Function to disable collisions on demand (set_disabled doesn't work, function deprecated)
+# func player_paddle_disable_collisions(disabled_state: bool) -> void:
+	# $Paddle_CollisionShape2D.set_disabled(disabled_state)
+	# print("Etat de désactivation : ", disabled_state)
+	# print("---")
