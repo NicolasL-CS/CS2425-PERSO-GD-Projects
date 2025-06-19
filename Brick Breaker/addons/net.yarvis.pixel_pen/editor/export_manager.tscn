@@ -1,14 +1,14 @@
 [gd_scene load_steps=20 format=3 uid="uid://cn5q432ln7srp"]
 
 [ext_resource type="Theme" uid="uid://bsuqu64445rmf" path="res://addons/net.yarvis.pixel_pen/resources/default_theme.tres" id="1_eikdn"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/ui/layout_split/layout_split.gd" id="2_5ge48"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/export_sheet/export_sheet.gd" id="2_paiee"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/ui/layout_split/branch.gd" id="3_aitvw"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/ui/layout_split/data_branch.gd" id="4_lnqw5"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas.gdshader" id="5_oodws"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/ui/tree_properties/tree_properties.gd" id="6_a6y63"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/export_sheet/canvas_export_2d.gd" id="6_rof74"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/ui/tree_properties/tree_row.gd" id="7_sqmv5"]
+[ext_resource type="Script" uid="uid://yuew1qfc6xej" path="res://addons/net.yarvis.pixel_pen/ui/layout_split/layout_split.gd" id="2_5ge48"]
+[ext_resource type="Script" uid="uid://bqg6ovs0lmsef" path="res://addons/net.yarvis.pixel_pen/editor/export_sheet/export_sheet.gd" id="2_paiee"]
+[ext_resource type="Script" uid="uid://curf5enp554ka" path="res://addons/net.yarvis.pixel_pen/ui/layout_split/branch.gd" id="3_aitvw"]
+[ext_resource type="Script" uid="uid://7o2bbf3s31yt" path="res://addons/net.yarvis.pixel_pen/ui/layout_split/data_branch.gd" id="4_lnqw5"]
+[ext_resource type="Shader" uid="uid://dw7c8iq4waaac" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas.gdshader" id="5_oodws"]
+[ext_resource type="Script" uid="uid://q6l5th4buh5h" path="res://addons/net.yarvis.pixel_pen/ui/tree_properties/tree_properties.gd" id="6_a6y63"]
+[ext_resource type="Script" uid="uid://dyc3vm7ab8ok4" path="res://addons/net.yarvis.pixel_pen/editor/export_sheet/canvas_export_2d.gd" id="6_rof74"]
+[ext_resource type="Script" uid="uid://g3pnkxjjm4x2" path="res://addons/net.yarvis.pixel_pen/ui/tree_properties/tree_row.gd" id="7_sqmv5"]
 
 [sub_resource type="Resource" id="Resource_5buie"]
 script = ExtResource("3_aitvw")
@@ -78,6 +78,8 @@ enum_option = Array[String]([])
 file_value = ""
 file_mode = 4
 file_dialog_filters = PackedStringArray("*.png, *.jpg, *.jpeg ; Supported Images")
+color_value = Color(1, 1, 1, 1)
+color_alpha = true
 
 [sub_resource type="Resource" id="Resource_w8643"]
 script = ExtResource("7_sqmv5")
@@ -113,6 +115,8 @@ enum_option = Array[String]([])
 file_value = ""
 file_mode = 4
 file_dialog_filters = PackedStringArray("*.png, *.jpg, *.jpeg ; Supported Images")
+color_value = Color(1, 1, 1, 1)
+color_alpha = true
 
 [sub_resource type="Resource" id="Resource_a0wck"]
 script = ExtResource("7_sqmv5")
@@ -148,6 +152,8 @@ enum_option = Array[String](["Keep All", "Keep One"])
 file_value = ""
 file_mode = 4
 file_dialog_filters = PackedStringArray("*.png, *.jpg, *.jpeg ; Supported Images")
+color_value = Color(1, 1, 1, 1)
+color_alpha = true
 
 [sub_resource type="Resource" id="Resource_r0lea"]
 script = ExtResource("7_sqmv5")
@@ -183,6 +189,8 @@ enum_option = Array[String](["Horizontal", "Vertical"])
 file_value = ""
 file_mode = 4
 file_dialog_filters = PackedStringArray("*.png, *.jpg, *.jpeg ; Supported Images")
+color_value = Color(1, 1, 1, 1)
+color_alpha = true
 
 [sub_resource type="Resource" id="Resource_tu37v"]
 script = ExtResource("7_sqmv5")
@@ -218,6 +226,8 @@ enum_option = Array[String]([])
 file_value = ""
 file_mode = 4
 file_dialog_filters = PackedStringArray("*.png")
+color_value = Color(1, 1, 1, 1)
+color_alpha = true
 
 [node name="ExportSheet" type="ConfirmationDialog" node_paths=PackedStringArray("properties_node", "canvas_2d")]
 title = "Animation Sheets Export"

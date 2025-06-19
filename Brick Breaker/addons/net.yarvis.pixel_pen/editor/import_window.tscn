@@ -1,19 +1,19 @@
 [gd_scene load_steps=14 format=3 uid="uid://g5dkvguskujt"]
 
 [ext_resource type="Theme" uid="uid://bsuqu64445rmf" path="res://addons/net.yarvis.pixel_pen/resources/default_theme.tres" id="1_gihsy"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas.gdshader" id="2_5yc1d"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/import_window/import_window.gd" id="2_osla2"]
+[ext_resource type="Shader" uid="uid://dw7c8iq4waaac" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas.gdshader" id="2_5yc1d"]
+[ext_resource type="Script" uid="uid://dpu2rhsx0pfos" path="res://addons/net.yarvis.pixel_pen/editor/import_window/import_window.gd" id="2_osla2"]
 [ext_resource type="Texture2D" uid="uid://d1bwfe3end0bu" path="res://addons/net.yarvis.pixel_pen/resources/icon/Icon.png" id="3_ipgu5"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas_cursor.gdshader" id="3_ygu2c"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/import_window/import_window_grid.gd" id="5_66m38"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/import_window/input_control.gd" id="5_ws7pf"]
+[ext_resource type="Shader" uid="uid://c8fv1nyt1t3es" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas_cursor.gdshader" id="3_ygu2c"]
+[ext_resource type="Script" uid="uid://d30m7wufkg335" path="res://addons/net.yarvis.pixel_pen/editor/import_window/import_window_grid.gd" id="5_66m38"]
+[ext_resource type="Script" uid="uid://cd5aoeddndvfl" path="res://addons/net.yarvis.pixel_pen/editor/import_window/input_control.gd" id="5_ws7pf"]
 [ext_resource type="Texture2D" uid="uid://cgb05ladnfctb" path="res://addons/net.yarvis.pixel_pen/resources/icon/grid_3x3_24.svg" id="7_8p84s"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v1bee"]
 shader = ExtResource("2_5yc1d")
-shader_parameter/origin = null
+shader_parameter/origin = Vector2(0, 0)
 shader_parameter/tint = Vector4(0, 0, 0, 0)
-shader_parameter/tile_size = 8.0
+shader_parameter/tile_size = Vector2(16, 16)
 shader_parameter/lock_to_global = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_a4hac"]

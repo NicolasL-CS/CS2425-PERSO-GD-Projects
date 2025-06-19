@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://jhd48ca044sy"]
 
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/preferences/preferences.gd" id="1_5y7r0"]
+[ext_resource type="Script" uid="uid://cfjnae2lg208n" path="res://addons/net.yarvis.pixel_pen/editor/preferences/preferences.gd" id="1_5y7r0"]
 [ext_resource type="Theme" uid="uid://bsuqu64445rmf" path="res://addons/net.yarvis.pixel_pen/resources/default_theme.tres" id="1_mhedo"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/ui/tree_properties/tree_properties.gd" id="3_74jry"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/preferences/general_preferences.gd" id="3_k57uy"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/ui/tree_properties/tree_row.gd" id="4_6utim"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/preferences/shorcuts_preferences.gd" id="6_dsxs8"]
+[ext_resource type="Script" uid="uid://q6l5th4buh5h" path="res://addons/net.yarvis.pixel_pen/ui/tree_properties/tree_properties.gd" id="3_74jry"]
+[ext_resource type="Script" uid="uid://b5ylp5do0grga" path="res://addons/net.yarvis.pixel_pen/editor/preferences/general_preferences.gd" id="3_k57uy"]
+[ext_resource type="Script" uid="uid://g3pnkxjjm4x2" path="res://addons/net.yarvis.pixel_pen/ui/tree_properties/tree_row.gd" id="4_6utim"]
+[ext_resource type="Script" uid="uid://dcn7swa0dv7md" path="res://addons/net.yarvis.pixel_pen/editor/preferences/shorcuts_preferences.gd" id="6_dsxs8"]
 
 [sub_resource type="Resource" id="Resource_og6we"]
 script = ExtResource("4_6utim")

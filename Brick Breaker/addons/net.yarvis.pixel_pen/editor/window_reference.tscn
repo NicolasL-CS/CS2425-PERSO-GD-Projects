@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dexv2bql2g7r1"]
 
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/window_reference/window_reference.gd" id="1_73byk"]
+[ext_resource type="Script" uid="uid://bgple2fo61jrq" path="res://addons/net.yarvis.pixel_pen/editor/window_reference/window_reference.gd" id="1_73byk"]
 [ext_resource type="Theme" uid="uid://bsuqu64445rmf" path="res://addons/net.yarvis.pixel_pen/resources/default_theme.tres" id="1_fpbej"]
 
 [node name="WindowReference" type="Window" node_paths=PackedStringArray("texture")]

@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://bsuqu64445rmf" path="res://addons/net.yarvis.pixel_pen/resources/default_theme.tres" id="1_xyg4t"]
 [ext_resource type="FontFile" uid="uid://mcetkdnsuw5a" path="res://addons/net.yarvis.pixel_pen/resources/fonts/inter/static/Inter-Regular.ttf" id="1_yy08e"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/startup_window/startup_window.gd" id="2_lavm0"]
+[ext_resource type="Script" uid="uid://dg3vfy37po0x4" path="res://addons/net.yarvis.pixel_pen/editor/startup_window/startup_window.gd" id="2_lavm0"]
 
 [node name="StartupWindow" type="Window" node_paths=PackedStringArray("new_btn")]
 title = "Start With"

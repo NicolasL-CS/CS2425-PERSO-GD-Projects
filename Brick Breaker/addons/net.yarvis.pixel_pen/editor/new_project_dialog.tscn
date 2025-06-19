@@ -1,15 +1,15 @@
 [gd_scene load_steps=6 format=3 uid="uid://coamxys3ganlv"]
 
 [ext_resource type="Theme" uid="uid://bsuqu64445rmf" path="res://addons/net.yarvis.pixel_pen/resources/default_theme.tres" id="1_7thd0"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/new_project_dialog/new_project_dialog.gd" id="1_bewiu"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas.gdshader" id="1_y3rtv"]
+[ext_resource type="Script" uid="uid://b15uogpgtduqn" path="res://addons/net.yarvis.pixel_pen/editor/new_project_dialog/new_project_dialog.gd" id="1_bewiu"]
+[ext_resource type="Shader" uid="uid://dw7c8iq4waaac" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas.gdshader" id="1_y3rtv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enn2t"]
 bg_color = Color(1, 1, 1, 0.027451)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_auk7k"]
 shader = ExtResource("1_y3rtv")
-shader_parameter/origin = null
+shader_parameter/origin = Vector2(0, 0)
 shader_parameter/tint = Vector4(0, 0, 0, 0)
 shader_parameter/tile_size = Vector2(0, 0)
 shader_parameter/lock_to_global = 0.0

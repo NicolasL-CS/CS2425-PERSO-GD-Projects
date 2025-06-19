@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://c6d1gaf0juf5t"]
 
-[ext_resource type="Script" path="res://Scripts/ball.gd" id="1_ibebe"]
+[ext_resource type="Script" uid="uid://bta56vpido0la" path="res://Scripts/ball.gd" id="1_ibebe"]
 [ext_resource type="Texture2D" uid="uid://cgxjtlhh25gdj" path="res://Assets package #2/ball.png" id="1_lrwkl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vwyyu"]
@@ -39,8 +39,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1k2ux"]
 _data = {
-"BounceHit": SubResource("Animation_egaep"),
-"RESET": SubResource("Animation_8ve55")
+&"BounceHit": SubResource("Animation_egaep"),
+&"RESET": SubResource("Animation_8ve55")
 }
 
 [node name="Ball" type="CharacterBody2D"]

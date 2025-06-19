@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c8n35hn7ffit6"]
 
 [ext_resource type="Theme" uid="uid://bsuqu64445rmf" path="res://addons/net.yarvis.pixel_pen/resources/default_theme.tres" id="1_cp2yj"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/layer_properties/layer_properties.gd" id="1_s4vgq"]
+[ext_resource type="Script" uid="uid://l04jc6xwcjxh" path="res://addons/net.yarvis.pixel_pen/editor/layer_properties/layer_properties.gd" id="1_s4vgq"]
 
 [node name="LayerProperties" type="ConfirmationDialog" node_paths=PackedStringArray("line_edit")]
 title = "Layer Properties..."

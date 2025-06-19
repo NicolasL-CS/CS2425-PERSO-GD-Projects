@@ -1,12 +1,12 @@
 [gd_scene load_steps=16 format=3 uid="uid://dde4flu0tmqb3"]
 
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas_cursor.gdshader" id="1_iq3vk"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/editor_canvas/editor_canvas.gd" id="1_je1bm"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas.gdshader" id="2_ehwxr"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/grayscale.gdshader" id="3_g2v7b"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/marching_ant.gdshader" id="4_n22mx"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/marching_ant_filled.gdshader" id="5_6iuph"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/editor_canvas/cursor.gd" id="7_qpw1y"]
+[ext_resource type="Shader" uid="uid://c8fv1nyt1t3es" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas_cursor.gdshader" id="1_iq3vk"]
+[ext_resource type="Script" uid="uid://dbhjbfof1665e" path="res://addons/net.yarvis.pixel_pen/editor/editor_canvas/editor_canvas.gd" id="1_je1bm"]
+[ext_resource type="Shader" uid="uid://dw7c8iq4waaac" path="res://addons/net.yarvis.pixel_pen/resources/editor_canvas.gdshader" id="2_ehwxr"]
+[ext_resource type="Shader" uid="uid://4ju4qeh53ixq" path="res://addons/net.yarvis.pixel_pen/resources/grayscale.gdshader" id="3_g2v7b"]
+[ext_resource type="Shader" uid="uid://hb3qqhxtdhow" path="res://addons/net.yarvis.pixel_pen/resources/marching_ant.gdshader" id="4_n22mx"]
+[ext_resource type="Shader" uid="uid://btbp2e3yrryti" path="res://addons/net.yarvis.pixel_pen/resources/marching_ant_filled.gdshader" id="5_6iuph"]
+[ext_resource type="Script" uid="uid://b4nqo5gsx08i1" path="res://addons/net.yarvis.pixel_pen/editor/editor_canvas/cursor.gd" id="7_qpw1y"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_c4sdf"]
 shader = ExtResource("1_iq3vk")

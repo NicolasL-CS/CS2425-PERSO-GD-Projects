@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bj0oqgbe4c36d"]
 
 [ext_resource type="Theme" uid="uid://bsuqu64445rmf" path="res://addons/net.yarvis.pixel_pen/resources/default_theme.tres" id="1_be7me"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/edit_canvas_size/edit_canvas_size.gd" id="1_skqr0"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/edit_canvas_size/anchor_view.gd" id="2_8mnh6"]
+[ext_resource type="Script" uid="uid://d0110x5d8j518" path="res://addons/net.yarvis.pixel_pen/editor/edit_canvas_size/edit_canvas_size.gd" id="1_skqr0"]
+[ext_resource type="Script" uid="uid://cfi17mmcl6a6h" path="res://addons/net.yarvis.pixel_pen/editor/edit_canvas_size/anchor_view.gd" id="2_8mnh6"]
 
 [node name="EditCanvasSize" type="ConfirmationDialog" node_paths=PackedStringArray("width_node", "height_node")]
 title = "Canvas Size"

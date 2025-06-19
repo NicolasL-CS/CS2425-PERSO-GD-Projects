@@ -393,8 +393,7 @@ pin_data = Array[Dictionary]([{
 "type": 24,
 "flags": 2050,
 "label": "Object",
-"target_class": "Object",
-"dv": null
+"target_class": "Object"
 }, {
 "pin_name": &"method",
 "type": 21,
@@ -549,8 +548,7 @@ pin_data = Array[Dictionary]([{
 "dir": 1,
 "flags": 2050,
 "label": "GameManager",
-"target_class": "Node",
-"dv": null
+"target_class": "Node"
 }])
 
 [obj type="OScriptSignal" id="OScriptSignal_c2hcq"]

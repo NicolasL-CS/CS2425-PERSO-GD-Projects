@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://b6j8y8bm5j65r"]
 
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/image_option_btn/image_option_btn.gd" id="1_h5dfv"]
+[ext_resource type="Script" uid="uid://caqy1ikywfjyv" path="res://addons/net.yarvis.pixel_pen/editor/image_option_btn/image_option_btn.gd" id="1_h5dfv"]
 [ext_resource type="Theme" uid="uid://bsuqu64445rmf" path="res://addons/net.yarvis.pixel_pen/resources/default_theme.tres" id="1_uhi4c"]
 [ext_resource type="Texture2D" uid="uid://kdvmmfynifpw" path="res://addons/net.yarvis.pixel_pen/resources/icon/chevron-down.svg" id="2_113l0"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/resources/tint_color.gdshader" id="2_c5kqn"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/image_option_btn/border_draw.gd" id="5_hwd2w"]
+[ext_resource type="Shader" uid="uid://ibmlkhvnv4jd" path="res://addons/net.yarvis.pixel_pen/resources/tint_color.gdshader" id="2_c5kqn"]
+[ext_resource type="Script" uid="uid://cs56glhxwv4c7" path="res://addons/net.yarvis.pixel_pen/editor/image_option_btn/border_draw.gd" id="5_hwd2w"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mslmp"]
 bg_color = Color(0.6, 0.6, 0.6, 0.0980392)

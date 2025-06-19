@@ -1,12 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://d07ag5dcje13i"]
 
 [ext_resource type="PackedScene" uid="uid://ooigbfhfy4wa" path="res://addons_demos/limboai_demo/agents/agent_base.tscn" id="1_mswd4"]
-[ext_resource type="Script" path="res://addons_demos/limboai_demo/agents/player/player.gd" id="2_24nyi"]
-[ext_resource type="Script" path="res://addons_demos/limboai_demo/agents/player/states/idle_state.gd" id="3_ekb12"]
-[ext_resource type="Script" path="res://addons_demos/limboai_demo/agents/player/states/move_state.gd" id="4_paikn"]
-[ext_resource type="Script" path="res://addons_demos/limboai_demo/agents/player/states/attack_state.gd" id="5_mpgu6"]
-[ext_resource type="Script" path="res://addons_demos/limboai_demo/agents/player/states/dodge_state.gd" id="6_7o4a6"]
-
+[ext_resource type="Script" uid="uid://dbcgi5r643rri" path="res://addons_demos/limboai_demo/agents/player/player.gd" id="2_24nyi"]
+[ext_resource type="Script" uid="uid://bdut4xnbrudy6" path="res://addons_demos/limboai_demo/agents/player/states/idle_state.gd" id="3_ekb12"]
+[ext_resource type="Script" uid="uid://dy7q5iac4tgmx" path="res://addons_demos/limboai_demo/agents/player/states/move_state.gd" id="4_paikn"]
+[ext_resource type="Script" uid="uid://kege6vmml5px" path="res://addons_demos/limboai_demo/agents/player/states/attack_state.gd" id="5_mpgu6"]
+[ext_resource type="Script" uid="uid://cyhfj83eic0vb" path="res://addons_demos/limboai_demo/agents/player/states/dodge_state.gd" id="6_7o4a6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8pofm"]
 size = Vector2(150, 50)

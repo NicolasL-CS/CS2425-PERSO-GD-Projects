@@ -1,12 +1,12 @@
 [gd_scene load_steps=11 format=3 uid="uid://7y0nin2svgj7"]
 
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/color_wheel_script/color_wheel.gd" id="1_ibq4c"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/shader/sv_slider.gdshader" id="1_xdkuq"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/shader/hue_slider.gdshader" id="2_lkj77"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/color_wheel_script/sv_slider.gd" id="2_xsppv"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/color_wheel_script/hue_slider.gd" id="4_jsnlp"]
-[ext_resource type="Script" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/color_wheel_script/alpha_slider.gd" id="6_1shs5"]
-[ext_resource type="Shader" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/shader/alpha_slider.gdshader" id="6_ajt15"]
+[ext_resource type="Script" uid="uid://c5g1mkwjhl0yg" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/color_wheel_script/color_wheel.gd" id="1_ibq4c"]
+[ext_resource type="Shader" uid="uid://dlygao0iwcxb5" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/shader/sv_slider.gdshader" id="1_xdkuq"]
+[ext_resource type="Shader" uid="uid://baymahi2nytkt" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/shader/hue_slider.gdshader" id="2_lkj77"]
+[ext_resource type="Script" uid="uid://qa5ry4na4r21" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/color_wheel_script/sv_slider.gd" id="2_xsppv"]
+[ext_resource type="Script" uid="uid://dekciluhry0i4" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/color_wheel_script/hue_slider.gd" id="4_jsnlp"]
+[ext_resource type="Script" uid="uid://btyfd5k8k11ho" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/color_wheel_script/alpha_slider.gd" id="6_1shs5"]
+[ext_resource type="Shader" uid="uid://cy3w0ne5o40hq" path="res://addons/net.yarvis.pixel_pen/editor/panels/color_wheel/shader/alpha_slider.gdshader" id="6_ajt15"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g0thh"]
 shader = ExtResource("1_xdkuq")
