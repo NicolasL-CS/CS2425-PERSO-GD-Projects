@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # Overall variables
-var speed = 200
+var speed = GameManager.ball_speed
 var dir = Vector2.DOWN
 var is_active = true
 

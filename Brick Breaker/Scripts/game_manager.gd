@@ -4,13 +4,16 @@ extends Node
 var player_score = 0
 var player_level = 1
 var player_lives = 10
-var player_paddle_speed = 20
+var player_paddle_speed = 4000
+var ball_speed = 200
 
-# Updates HUD values on tick (process)
-func _process(delta: float) -> void:
-	$CanvasLayer/Control/HBoxContainer/ScoreLabel.text = "SCORE: " + str(player_score)
-	$CanvasLayer/Control/HBoxContainer/LevelLabel.text = "LEVEL: " + str(player_level)
-	$CanvasLayer/Control/HBoxContainer/LivesLabel.text = "LIVES: " + str(player_lives)
+# On call, resets global variables to their original values
+func reset_game_variables():
+	player_score = 0
+	player_level = 1
+	player_lives = 10
+	player_paddle_speed = 4000
+	ball_speed = 200
 	
 # On call, returns player paddle speed
 func get_player_paddle_speed():
@@ -28,3 +31,9 @@ func playerLives_decrease():
 		print("Game over!")
 		get_tree().change_scene_to_file("res://Scenes/Levels/game_over.tscn")
 	return(player_lives)
+	
+	# Updates HUD values on tick (process)
+func _process(delta: float) -> void:
+	$CanvasLayer/Control/HBoxContainer/ScoreLabel.text = "SCORE: " + str(player_score)
+	$CanvasLayer/Control/HBoxContainer/LevelLabel.text = "LEVEL: " + str(player_level)
+	$CanvasLayer/Control/HBoxContainer/LivesLabel.text = "LIVES: " + str(player_lives)

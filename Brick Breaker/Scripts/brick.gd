@@ -14,6 +14,7 @@ func ball_anim_play_BounceHit():
 
 func hit():
 	GameManager.points_add(1)
+	$CPUParticles2D.emitting = true
 	$Sprite2D.visible = false
 	$CollisionShape2D.disabled = true
 	var bricksLeft = get_tree().get_nodes_in_group("Bricks")

@@ -3,7 +3,7 @@
 extends CharacterBody2D
 
 # Player speed base value
-const SPEED = 1000.0
+const SPEED = 1000
 
 # Jump velocity base value (not required in this context)
 # const JUMP_VELOCITY = -400.0
